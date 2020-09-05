@@ -1,7 +1,7 @@
 package main
 
 import (
-	Entities "domain/entities"
+	Entities "Domain/Entities"
 	"html/template"
 	"net/http"
 )
@@ -12,8 +12,7 @@ type CustomerPageData struct {
 }
 
 func main() {
-
-	tmpl := template.Must(template.ParseFiles("layout.html"))
+	tmpl := template.Must(template.ParseFiles("Views\\Customer.html"))
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		data := CustomerPageData{
 			PageTitle: "My Customers list",

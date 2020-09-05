@@ -1,0 +1,54 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h1>{{.PageTitle}}</h1>
+        <!-- <ul>
+            {{range .Customers}}
+                <li>{{.Firstname}}</li>
+            {{end}}
+        </ul> -->
+
+        <table border="1">
+            <tr>
+                <th>
+                    <a href="#">First Name</a>
+                </th>
+                <th>
+                    <a href="#">Last Name</a>
+                </th>
+                <th>
+                    <a href="#">Birth Date</a>
+                </th>
+                <th>
+                    <a href="#">Gender</a>
+                </th>
+                <th>
+                    <a href="#">E-mail</a>
+                </th>
+                <th>
+                    <a href="#">Address</a>
+                </th>
+                <th>
+                    <a href="#">Actions</a>
+                </th>
+            </tr>
+            {{range .Customers}}
+                <tr>
+                    <td>{{.Firstname}}</td>
+                    <td>{{.Lastname}}</td>
+                    <td>{{.Birthdate}}</td>
+                    <td>{{.Gender}}</td>
+                    <td>{{.Email}}</td>
+                    <td>{{.Address}}</td>
+                    <td><a href="#">Edit</a>|<a href="#">Delete</a></td>
+                </tr>
+            {{end}}
+        </table>
+        <ul>
+            <li><button>Previous</button></li>
+            <li><button>Next</button></li>
+        </ul>
+    </body>
+</html>
